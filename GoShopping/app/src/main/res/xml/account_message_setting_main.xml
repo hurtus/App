@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="用户基本设置"
+        android:key="base_accountMessage">
+        <Preference android:title="用户头像"
+            android:key="headPicture_accountMessage"/>
+        <EditTextPreference
+            android:title="用户昵称"
+            android:key="nickName_accountMessage"
+            android:defaultValue=""
+            android:summary=""
+            />
+
+        <Preference android:key="place_accountMessage"
+            android:title="收获地址"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GoShopping</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="firstPage">首页</string>
+    <string name="nickName">昵称</string>
+    <string name="nav_food">美食</string>
+    <string name="nav_movie">电影</string>
+    <string name="nav_hotel">酒店住宿</string>
+    <string name="nav_relax">休闲娱乐</string>
+    <string name="nav_beauty">丽人</string>
+    <string name="nav_jingdian">景点</string>
+    <string name="nav_ktv">KTV</string>
+    <string name="nav_discount">折扣</string>
+    <string name="nav_car">汽车维修</string>
+    <string name="nav_takeaway">外卖</string>
+
+</resources>

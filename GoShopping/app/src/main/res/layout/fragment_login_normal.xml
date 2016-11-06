@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_input_rounded_bg"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/login_account_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="用户名"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_account_grey600_24dp"
+                android:drawablePadding="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            >
+
+            <EditText
+                android:id="@+id/login_password_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="密码"
+                android:textSize="16sp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_lock_grey600_24dp"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                >
+
+                <EditText
+                    android:id="@+id/login_verificationCode_text_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:hint="验证码"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_cloud_grey600_24dp"
+                    android:drawablePadding="10dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/login_verificationCode_image_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher"/>
+
+            <Button
+                android:id="@+id/login_verificationCode_change_normal"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="换一张"
+                android:textColor="@android:color/white"
+                android:background="@drawable/login_button_rounded_bg"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button_rounded_bg"
+        />
+</LinearLayout>

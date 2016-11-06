@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+
+    <include layout="@layout/homepage_movie_floating_top"/>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <ImageView
+            android:id="@+id/movie_icon"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:id="@+id/movie_name"
+            android:text="name"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/movie_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/actors"
+            android:text="主演：xxxx"
+            android:layout_toRightOf="@id/movie_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/movie_desc"
+            android:text="这是一部电影的介绍"
+            android:layout_toRightOf="@id/movie_icon"
+            android:layout_above="@id/actors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>

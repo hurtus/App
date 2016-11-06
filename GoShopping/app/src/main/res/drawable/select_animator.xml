@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+
+
+        <objectAnimator android:duration="@android:integer/config_shortAnimTime"
+
+            android:propertyName="elevation"
+
+            android:valueTo="0dp"
+
+            android:valueType="floatType" />
+
+        <!--<objectAnimator android:propertyName="elevation"-->
+
+        <!--android:duration="0"-->
+
+        <!--android:valueTo="@dimen/button_elevation_material"-->
+
+        <!--android:valueType="floatType"/>-->
+
+
+    </item>
+
+    <!-- 基本状态 -->
+
+    <item>
+
+
+        <objectAnimator android:duration="@android:integer/config_shortAnimTime"
+
+            android:propertyName="elevation"
+
+            android:valueTo="2dp"
+
+            android:valueType="floatType" />
+
+        <!--<objectAnimator android:propertyName="translationZ"-->
+
+        <!--android:duration="0"-->
+
+        <!--android:valueTo="@dimen/button_elevation_material"-->
+
+        <!--android:valueType="floatType" />-->
+
+
+    </item>
+
+</selector>
